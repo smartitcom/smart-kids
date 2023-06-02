@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Інтерактивна картка</title>
+</head>
+<body>
+<div class="container">
+	<h1 class="title">Профіль</h1>
+
+	<form action="#" id="form">
+		<input type="text" placeholder="Імʼя" id="name" required>
+		<input type="text" placeholder="Хоббі" id="hobby" required>
+		<button type="submit">Зберегти</button>
+	</form>
+
+	<div class="card">
+		<div class="card__img">
+			<img src="" alt="">
+		</div>
+
+		<div class="card__title" id="title">Владислав Абрамов</div>
+		<div class="card__subtitle" id="subtitle">Senior Front-End Developer</div>
+		<div class="card__descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ea quibusdam fugit omnis, repellendus possimus nobis accusantium aliquid ipsa.</div>
+	</div>
+</div>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Segoe UI', sans-serif;
+			background-color: rgb(220, 220, 220);
+			text-align: center;
+		}
+
+		.container {
+			max-width: 500px;
+			margin: 20px auto 0;
+			padding: 0 20px;
+
+		}
+
+		form {
+			margin-top: 20px;
+		}
+
+		/* form > * {
+			display: block;
+			width: 100%;
+			margin-bottom: 10px;
+		} */
+
+		input {
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 2px;
+		}
+
+		button {
+			background-color: rgb(42, 169, 126);
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			cursor: pointer;
+			border-radius: 2px;
+		}
+
+		.card {
+			background-color: #fff;
+			border-radius: 8px;
+			padding: 20px;
+			margin: 20px auto 0;
+		}
+
+		.card__title {
+			font-size: 24px;
+		}
+
+		.card__subtitle {
+			color: blue;
+			margin-top: 10px;
+		}
+
+		.card__descr {
+			margin-top: 20px;
+		}
+	</style>
+
+	<script>
+		const start = document.getElementById('start');
+		const form = document.getElementById('form');
+
+		form.addEventListener('submit', function() {
+			const name = form.querySelector('#name').value;
+			const hobby = form.querySelector('#hobby').value;
+
+			const title = document.getElementById('title');
+			const subtitle = document.getElementById('subtitle');
+
+			title.innerHTML = name;
+			subtitle.innerHTML = hobby;
+		})
+	</script>
+</body>
+</html>

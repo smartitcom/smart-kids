@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Вгадай число</title>
+</head>
+<body>
+<div class="container">
+	<h1 id="title">Вгадай число</h1>
+
+	<div class="grid">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</div>
+
+	<div id="start">Почати</div>
+</div>
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: 'Segoe UI', sans-serif;
+			background-color: grey;
+			text-align: center;
+		}
+
+		.container {
+			max-width: 1100px;
+			margin: 20px auto 0;
+			padding: 0 20px;
+
+		}
+
+		h1 {
+			color: white;
+			text-align: center;
+		}
+
+		.grid {
+			display: flex;
+			text-align: center;
+		}
+
+		.grid .item {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 64px;
+
+			width: 400px;
+			height: 400px;
+			background-color: white;
+			border-radius: 16px;
+			margin: 0 10px;
+		}
+
+		#start {
+			font-size: 64px;
+			padding: 20px 40px;
+			background-color: white;
+			border: none;
+			border-radius: 8px;
+			margin-top: 20px;
+			display: block;
+		}
+
+
+	</style>
+
+	<script>
+
+
+
+
+
+		let randomNumber;
+
+		const start = document.getElementById('start');
+	
+		start.onclick = function() {
+			randomNumber = Math.floor(Math.random() * 3) + 1;
+			const number = prompt('Вгадайте число від 1 до 3');
+
+			if (+number === randomNumber) {
+				alert("Вітаємо! Ви вгадали число!");
+				randomNumber = Math.floor(Math.random() * 3) + 1;
+			} else {
+				alert("Невірно.");
+			}
+		};
+
+
+
+
+
+	</script>
+</body>
+</html>

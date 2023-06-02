@@ -1,0 +1,26 @@
+h1 {
+  color: red;
+}
+
+h2 {
+}
+
+body {
+  font-family: Arial;
+  background: lightgrey;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto 0;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+img {
+  border-radius: 8px;
+}
