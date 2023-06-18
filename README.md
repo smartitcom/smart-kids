@@ -1,3 +1,3 @@
 ## SMART Kids 2023
 
-<img src="https://www.yammer.com/api/v1/uploaded_files/1709256556544/version/1731996516352/large_preview/?client_application_id=40443904&fallback_to_icon=false&file_type=image&network_id=487127&storage=SHAREPOINT&uid=1474781069312">
+<img src="https://instagram.fiev6-1.fna.fbcdn.net/v/t51.2885-15/350719503_1297885227604772_6180677483752686286_n.jpg?stp=dst-jpg_e35&_nc_ht=instagram.fiev6-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=P1IjvuI3Ta0AX_NGrGK&edm=ABmJApABAAAA&ccb=7-5&ig_cache_key=MzExNTM3OTEyOTc1NTAwMzIwNg%3D%3D.2-ccb7-5&oh=00_AfDI0iDRXEKRq9d3o_TjCP-EZHnck9MTUxPNK2BBBsD1_A&oe=6493E298&_nc_sid=a1ad6c">
